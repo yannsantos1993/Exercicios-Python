@@ -1,9 +1,11 @@
 IDADE = int(input("Digite a idade do nadador:"))
 if IDADE >= 5 and IDADE <=7:
     print("Infantil A")
-if IDADE == 12 or IDADE == 13:
-    print("Juvenil A")
-if IDADE >= 18:
-    print ("Adultos")
-if IDADE < 5 or (IDADE >=8 and IDADE <=11) or (IDADE >=14 and IDADE <=17):
-    print("Não pode competir")
+else:
+    if IDADE == 12 or IDADE == 13:
+        print("Juvenil A")
+    else:
+        if IDADE >= 18:
+            print ("Adultos")
+        else:
+            print("Não pode competir")
