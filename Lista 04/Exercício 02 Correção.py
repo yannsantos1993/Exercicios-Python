@@ -11,53 +11,40 @@ PESO_2 = float(input("Digite o peso da segunda pessoa:"))
 IDADE_3 = int(input("Digite a idade da terceira pessoa:"))
 ALTURA_3 = float(input("Digite a altura da terceira pessoa:"))
 PESO_3 = float(input("Digite o peso da terceira pessoa:"))
-if IDADE_1 > 20:
-    I1 = 1
-else:
-    I1 = 0
-if IDADE_2 > 20:
-    I2 = 1
-else:
-    I2 = 0
-if IDADE_3 > 20:
-    I3 = 1
-else:
-    I3 = 0
 
-TOTAL_PESSOAS20 = I1+I2+I3
-TOTAL_PESSOAS20 = I1 +I2 +I3
-print("Das pessoas informadas", TOTAL_PESSOAS20, "tem idade superior a 20 anos.")
+ACIMA_50 = 0
+if IDADE_1 > 50:
+    ACIMA_50 += 1
+if IDADE_2 > 50:
+    ACIMA_50 += 1
+if IDADE_3 > 50:
+    ACIMA_50 += 1
+print(f"{ACIMA_50} tem idade superior a 50 anos.")
 
+QTD_10_20 = 0
+SOMA_ALT = 0
 if IDADE_1 >= 15 and IDADE_1 <= 18:
-    A1 = ALTURA_1
-    A11 = 0
-
+    QTD_10_20 += 1
+    SOMA_ALT += ALTURA_1
 if IDADE_2 >= 15 and IDADE_2 <= 18:
-    A2 = ALTURA_2
-    A22 = 0
-
+    QTD_10_20 += 1
+    SOMA_ALT += ALTURA_2
 if IDADE_3 >= 15 and IDADE_3 <= 18:
-    A3 = ALTURA_3
-    A33 = 0
+    QTD_10_20 += 1
+    SOMA_ALT += ALTURA_3
+if QTD_10_20 > 0:
+    MEDIA = SOMA_ALT / QTD_10_20
+else:
+    print("Das pessoas informadas, nenhuma tem idade entre 10 e 20 anos.")
+print("A Média de altura das pessoas de faixa etária dentre 15 e 18 anos é de", '{:.2f}'.format(MEDIA), "m.")
 
-MEDIA_ALTURAS = (A1 + A2 + A3) / (A11 + A22 + A33)
-print ("A Média de altura das pessoas de faixa etária dentre 15 e 18 anos é de", MEDIA_ALTURAS, "m.")
-print ("A Média de altura das pessoas de faixa etária dentre 15 e 18 anos é de", '{:.2f}'.format(MEDIA_ALTURAS), "m.")
-
+PESO_INF_60 = 0
 if PESO_1 < 60:
-    P1 = 1
-else:
-    P1 = 0
-
+    PESO_INF_60 += 1
 if PESO_2 < 60:
-    P2 = 1
-else:
-    P2 = 0
-
+    PESO_INF_60 += 1
 if PESO_3 < 60:
-    P3 = 1
-else:
-    P3 = 0
+    PESO_INF_60 += 1
 
-PORC_PESO = (100 * (P1 + P2 + P3)) / 3
+PORC_PESO = PESO_INF_60*100/3
 print ("A Porcentagem de pessoas com peso inferior a 60Kg equivale a", '{:.1f}'.format(PORC_PESO), "%" )
