@@ -24,7 +24,10 @@ if IDADE_3 > 20:
 else:
     I3 = 0
 
+<<<<<<< HEAD
 TOTAL_PESSOAS20 = I1+I2+I3
+=======
+>>>>>>> 391e3b79017cdc2eaae3273bc368f908b3643a4f
 TOTAL_PESSOAS20 = I1 +I2 +I3
 print("Das pessoas informadas", TOTAL_PESSOAS20, "tem idade superior a 20 anos.")
 
@@ -41,7 +44,10 @@ if IDADE_3 >= 15 and IDADE_3 <= 18:
     A33 = 0
 
 MEDIA_ALTURAS = (A1 + A2 + A3) / (A11 + A22 + A33)
+<<<<<<< HEAD
 print ("A Média de altura das pessoas de faixa etária dentre 15 e 18 anos é de", MEDIA_ALTURAS, "m.")
+=======
+>>>>>>> 391e3b79017cdc2eaae3273bc368f908b3643a4f
 print ("A Média de altura das pessoas de faixa etária dentre 15 e 18 anos é de", '{:.2f}'.format(MEDIA_ALTURAS), "m.")
 
 if PESO_1 < 60:
@@ -60,4 +66,8 @@ else:
     P3 = 0
 
 PORC_PESO = (100 * (P1 + P2 + P3)) / 3
+<<<<<<< HEAD
 print ("A Porcentagem de pessoas com peso inferior a 60Kg equivale a", '{:.1f}'.format(PORC_PESO), "%" )
+=======
+print ("A Porcentagem de pessoas com peso inferior a 60Kg equivale a", '{:.1f}'.format(PORC_PESO), "%" )
+>>>>>>> 391e3b79017cdc2eaae3273bc368f908b3643a4f
