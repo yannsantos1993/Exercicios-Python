@@ -16,16 +16,16 @@ else:
 
     SOMA = J1 + J2
     RESTO = SOMA % 2
-    if RESTO == 0 and JOG1.upper() == "P":
+    if RESTO == 0 and JOG1 == "P":
         print(f"Parabéns Jogador #1, você ganhou! pois o número final {SOMA} é par!")
     else:
-        if RESTO == 0 and JOG2.upper() == "P":
+        if RESTO == 0 and JOG2 == "P":
             print(f"Parabéns Jogador #2, você ganhou! pois o número final {SOMA} é par!")
         else:
-            if RESTO != 0 and JOG1.upper() == "I":
+            if RESTO != 0 and JOG1 == "I":
                 print(f"Parabéns Jogador #1, você ganhou! pois o número final {SOMA} é ímpar!")
             else:
-                if RESTO != 0 and JOG2.upper() == "I":
+                if RESTO != 0 and JOG2 == "I":
                     print(f"Parabéns Jogador #2, você ganhou! pois o número final {SOMA} é ímpar!")
                 else:
                     None
