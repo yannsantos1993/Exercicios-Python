@@ -1,6 +1,6 @@
-JOG1 = input("Para começarmos o jogo escolha: (P)ar ou (I)mpar?")
-if JOG1.upper() != "P" and JOG1.upper() != "I":
-    print("Por favor digite apenas P se quiser escolher Par oi I se quiser escolher Ímpar")
+JOG1 = input("Para começarmos o jogo escolha: (P)ar ou (I)mpar?").strip().upper()
+if JOG1 not in("P, I, Í"):
+    print("Por favor digite apenas 'P' se quiser escolher 'Par' ou 'I' se quiser escolher 'Ímpar'")
 else:
     # é uma opção valida
     if JOG1.upper() == "P":
