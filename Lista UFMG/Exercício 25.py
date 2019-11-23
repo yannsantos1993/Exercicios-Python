@@ -1,4 +1,5 @@
 #25 - Criar um algoritmo em PORTUGOL que leia dez números inteiros e imprima o maior e o segundo maior número da lista.
+maior = None
 for contador in range(10):
     numero = int(input("Digite um numero por favor: "))
     if (contador==0):
