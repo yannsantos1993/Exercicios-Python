@@ -4,7 +4,7 @@ m90 = 0
 
 for pessoas in range (7):
     idade.append(int(input("Informe sua idade:")))
-    p =(float(input("Informe seu peso:")))
+    p =float(input("Informe seu peso:"))
     if p > 90:
         m90 +=1
         peso.append(p)
