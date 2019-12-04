@@ -1,0 +1,5 @@
+contador = 0            #início
+fim = 10                #fim
+while contador < fim:   #teste lógico para testar se o código precisará ou não executá-lo novamente.
+    print("oi")
+    contador += 1       #ou: contador = contador + 1 (incremento)
