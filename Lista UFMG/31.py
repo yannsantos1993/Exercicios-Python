@@ -1,3 +1,6 @@
+'''Escreva um algoritmo em PORTUGOL que realize o produto de A (número real) por B (número inteiro), ou seja,
+A * B, através de adições (somas). Esses dois valores são passados pelo usuário através do teclado.'''
+
 contador = 0
 soma_a = 0
 soma_b = 0

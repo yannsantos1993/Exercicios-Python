@@ -33,6 +33,9 @@ while contador < pessoas_analisadas:
     contador+=1
 
 print(f"Dos analisados, {menor_50_peso_menor_60} são maiores que 50 anos e pesam menos de 60kg.")
-print(f"Dos analisados, os menores de 1,50m tem altura média de {'{:.2f}'.format(soma_alturas/pessoa_menor_150cm)}m.")
+if soma_alturas == 0 or pessoa_menor_150cm == 0:
+    print(f"Dos analisados, não há ninguém com altura inferior a 1.50m.")
+else:
+    print(f"Dos analisados, os menores de 1,50m tem altura média de {'{:.2f}'.format(soma_alturas/pessoa_menor_150cm)}m.")
 print(f"Dos analisados, {'{:.2f}'.format((olhos_azuis*100)/pessoas_analisadas)} % deles possuem olhos azuis.")
 print(f"Dos analisados, {ruivas_sem_olhos_azuis} deles são ruivos (as) e não possuem olhos azuis.")
