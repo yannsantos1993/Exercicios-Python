@@ -6,7 +6,7 @@ ocorrencias = 3
 
 while contador < ocorrencias:
     codigos.append(int(input("Digite o código do produto: ")))
-    precos(float(input("Digite o preço do produto:")))
+    precos.append(float(input("Digite o preço do produto:")))
     contador +=1
 
 menor_preco = precos.index(min(precos))
